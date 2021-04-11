@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'keepcalm';
+    src: url("../Fonts/keepcalm.ttf");
+    font-style: normal;
+    font-weight: 100;
+  }
+  
+  @font-face {
+    font-family: 'laquasta';
+    src: url("../Fonts/laquasta.ttf");
+    font-style: normal;
+    font-weight: 100;
+  }
+
+
+.container {
+    text-align: center;
+}
+
+.image {
+    width: 80%;
+}
+
+.saveTheDate {
+    font-family: 'keepcalm';
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  .image {
+    width: 60%;
+  }
+}

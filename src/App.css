@@ -1,38 +1,246 @@
-.App {
+@font-face {
+  font-family: 'keepcalm';
+  src: url("./Fonts/keepcalm.ttf");
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'laquasta';
+  src: url("./Fonts/laquasta.ttf");
+  font-style: normal;
+  font-weight: 100;
+}
+
+::placeholder {
+  opacity: 0.4;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+input {
   text-align: center;
+  border: 3px solid #07A091;
+  border-radius: 100px;
+  width: 90%;
+  height: 1.7em;
+  font-size: 1.5em;
+  font-family: 'keepcalm';
+  color: #07A091;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input:focus, button:focus {
+  outline: none !important;
+  border-radius: 100px;
+  border: 3px solid #0bc4b1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1, h2 {
+  margin: 0px;
+  font-family: 'keepcalm';
+  color: #07A091;
+  height: 1.7em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  background-color: #07A091;
   color: white;
+  border: none !important;
+  border-radius: 40px;
+  height: 2em;
+  font-size: 1.5em;
+  width: 92%;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #4CBFB1;
+  border: 5px solid #4CBFB1;
+  color: white;
+  border-radius: 40px;
+  height: 2em;
+  font-size: 1.5em;
+  width: 92%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.main-image {
+  width: 80%;
+}
+
+.saveTheDate {
+  font-family: 'keepcalm';
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  .main-image {
+    width: 60%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  input {
+    height: 30px;
+    font-size: 20px;
+    width: 80%;
+  }
+
+  button {
+    height: 35px;
+    font-size: 20px;
+    width: 80%;
+  }
+
+  button:hover {
+    height: 35px;
+    width: 80%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  h1 {
+    margin-top: 10px;
+    font-size: 25px;
+  }
+
+  input {
+    height: 25px;
+    font-size: 15px;
+  }
+
+  button {
+    height: 30px;
+    font-size: 15px;
+  }
+
+  button:hover {
+    height: 30px;
+    font-size: 15px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  h1 {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+
+  input {
+    height: 25px;
+    font-size: 15px;
+  }
+
+  button {
+    height: 30px;
+    font-size: 15px;
+  }
+
+  button:hover {
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .main-image {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+  h1 {
+      margin-top: 10px;
+      font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  h1 {
+    margin-top: 15px;
+    font-size: 30px;
+  }
+
+  input {
+    height: 40px;
+    font-size: 15px;
+    width: 50%;
+  }
+
+  button {
+    height: 45px;
+    font-size: 15px;
+    width: 51%;
+  }
+
+  button:hover {
+    height: 40px;
+    font-size: 15px;
+    width: 50%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  input {
+    height: 35px;
+    font-size: 1.5em;
+  }
+
+  button {
+    height: 40px;
+    font-size: 1.5em;
+  }
+
+  button:hover {
+    height: 40px;
+  }
+}
+
+
+@media only screen and (min-width: 992px) and (orientation: portrait) {
+  input {
+    height: 35px;
+    font-size: 1.5em;
+    width: 50%;
+  }
+
+  button {
+    height: 40px;
+    font-size: 1.5em;
+    width: 50%;
+  }
+
+  button:hover {
+    height: 40px;
+    width: 50%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  input {
+    height: 40px;
+    font-size: 1.5em;
+  }
+
+  button {
+    height: 50px;
+    font-size: 1.5em;
+  }
+
+  button:hover {
+    height: 50px;
+    font-size: 1.5em;
   }
 }
