@@ -4,16 +4,7 @@ import MainImage from "./MainImage";
 import StyledInput from "./StyledInput";
 import saveTheDate from "../Images/save_the_date.svg";
 
-interface Props  {
-  setIsConfirmed: any
-}
-
-export const LandscapeView = ({setIsConfirmed}: Props): JSX.Element => {
-  
-  const handleSubmit = () => {
-    setIsConfirmed(true)
-  }
-
+export const LandscapeView = (): JSX.Element => {
   return (
     <div className={styles.container}>
       <div className={styles.leftBox}>
@@ -31,13 +22,20 @@ export const LandscapeView = ({setIsConfirmed}: Props): JSX.Element => {
             />
             <h1>September 18 2021</h1>
             <div style={{ height: "20px" }} />
-            <StyledInput type="text" placeholder="Fullname" />
+            <StyledInput type="text" placeholder="Fullname" formId="fullname" />
             <div style={{ height: "10px" }} />
-            <StyledInput type="email" placeholder="Your Email" />
+            <StyledInput type="email" placeholder="Your Email" formId="email" />
             <div style={{ height: "10px" }} />
-            <StyledInput type="text" placeholder="Any dietary requrements? " />
+            <StyledInput
+              type="text"
+              placeholder="Any dietary requrements?"
+              formId="diet"
+            />
             <div style={{ height: "20px" }} />
-            <button onClick={ handleSubmit }> RSVP </button>
+            <button>
+              {" "}
+              RSVP{" "}
+            </button>
           </div>
         </div>
       </div>

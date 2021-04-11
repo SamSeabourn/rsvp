@@ -1,13 +1,10 @@
 .background {
-  /* border: 2% double #07A091; */
-  /* border-radius: 2vw; */
   height: -webkit-fill-available;
   width: -webkit-fill-available;
-  /* margin: 4% 2%; */
   background-image: url("../Images/cute_pattern.svg");
   background-size: 30vh;
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 3%;
+  padding: 5%;
 }
 
 .card {
@@ -21,4 +18,11 @@
   -moz-box-shadow: 0px 0px 28px -7px rgba(0, 0, 0, 0.25);
   place-items: center;
 }
+
+@media only screen and (min-width: 600px) {
+  .background {
+    background-size: 60vh;
+  }
+}
+
 
