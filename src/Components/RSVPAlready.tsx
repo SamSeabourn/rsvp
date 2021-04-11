@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from 'react'
 import styles from '../Styles/ConfimationPage.module.css'
 
-const ConfitmationPage = () => {
+const RSVPAlready = () => {
     const [showMessage, setShowMessage] = useState<boolean>(false)
 
     useEffect(() => {
         setTimeout(() => {
             setShowMessage(true)
-        }, 2000)
+        }, 1000)
     },[])
 
     return (
         <div className={ styles.titleContainer }>
-            <h2 className={ styles.title }  style={{ opacity: showMessage? "1" : "0" }}>We look forward to celebrating with you.</h2>
+            <h2 className={ styles.title }  style={{ opacity: showMessage? "1" : "0" }}>You have already sent us your RSVP</h2>
         </div>
     )
 }
 
-export default ConfitmationPage
+export default RSVPAlready
