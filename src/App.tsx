@@ -5,8 +5,11 @@ import Background from './Components/Background';
 import PortraitView from './Components/PortraitView';
 import LandscapeView from './Components/LandscapeView';
 import ConfirmationPage from './Components/ConfitmationPage';
-import { keys } from './keys';
 import RSVPAlready from './Components/RSVPAlready';
+
+let keys = require('./keys.json');
+emailjs.init(keys["emailJSUserId"]);
+
 
 function App() {
   const [isPortrait, setIsPortrait] = useState<boolean>(false)
@@ -31,7 +34,10 @@ function App() {
   const handleSubmit = (e: any) => {
     setIsSendingConfirmation(true)
     e.preventDefault();
-    emailjs.sendForm('gmail', keys.templateId, e.target, keys.emailJSUserId)
+
+    console.log( keys["templateId"] )
+    console.log( keys["emailJSUserId"] )
+    emailjs.sendForm('gmail', keys["templateId"], e.target, keys["emailJSUserId"])
       .then((result) => {
           createRSVPCookie(true)
         }, (error) => {
@@ -49,7 +55,7 @@ function App() {
     <Background>
       <div style={{ display: alreadySentRSVP? "none" : "block" }}>
         <div  style={{ display: isSendingConfirmation ? "none" : "block" }}>
-          <form id="confirmationForm" onSubmit={ handleSubmit }>
+          <form id="confirmationForm" onSubmit={(e) => handleSubmit(e) }>
             {isPortrait ? <PortraitView/> : <LandscapeView/>}
           </form>
         </div>

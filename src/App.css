@@ -21,6 +21,11 @@ body, html {
   width: 100%;
 }
 
+#root {
+  min-height: 533px;
+  min-width: 350px;
+}
+
 input {
   text-align: center;
   border: 3px solid #07A091;
