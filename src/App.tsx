@@ -19,7 +19,11 @@ function App() {
   const cookieName ="rsvpd"
 
   const checkPortrait = () => {
-    setIsPortrait(window.innerHeight > window.innerWidth)
+      if (window.innerWidth < 500 ){
+        setIsPortrait(true)
+      } else {
+        setIsPortrait(window.innerHeight > window.innerWidth)
+      }
   }
 
   const createRSVPCookie = (confirmed: boolean) => {
@@ -34,9 +38,6 @@ function App() {
   const handleSubmit = (e: any) => {
     setIsSendingConfirmation(true)
     e.preventDefault();
-
-    console.log( keys["templateId"] )
-    console.log( keys["emailJSUserId"] )
     emailjs.sendForm('gmail', keys["templateId"], e.target, keys["emailJSUserId"])
       .then((result) => {
           createRSVPCookie(true)
