@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/rsvp/static/css/main.3fe777e8.chunk.css",
-    "main.js": "/rsvp/static/js/main.84ff6117.chunk.js",
-    "main.js.map": "/rsvp/static/js/main.84ff6117.chunk.js.map",
+    "main.css": "/rsvp/static/css/main.2044c6b4.chunk.css",
+    "main.js": "/rsvp/static/js/main.854fab1f.chunk.js",
+    "main.js.map": "/rsvp/static/js/main.854fab1f.chunk.js.map",
     "runtime-main.js": "/rsvp/static/js/runtime-main.c1a958bc.js",
     "runtime-main.js.map": "/rsvp/static/js/runtime-main.c1a958bc.js.map",
     "static/js/2.5a699dba.chunk.js": "/rsvp/static/js/2.5a699dba.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.d1ef1462.chunk.js": "/rsvp/static/js/3.d1ef1462.chunk.js",
     "static/js/3.d1ef1462.chunk.js.map": "/rsvp/static/js/3.d1ef1462.chunk.js.map",
     "index.html": "/rsvp/index.html",
-    "static/css/main.3fe777e8.chunk.css.map": "/rsvp/static/css/main.3fe777e8.chunk.css.map",
+    "static/css/main.2044c6b4.chunk.css.map": "/rsvp/static/css/main.2044c6b4.chunk.css.map",
     "static/js/2.5a699dba.chunk.js.LICENSE.txt": "/rsvp/static/js/2.5a699dba.chunk.js.LICENSE.txt",
     "static/media/Background.module.css": "/rsvp/static/media/cute_pattern.70e539d2.svg",
     "static/media/App.css": "/rsvp/static/media/laquasta.2b58a38d.ttf",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.c1a958bc.js",
     "static/js/2.5a699dba.chunk.js",
-    "static/css/main.3fe777e8.chunk.css",
-    "static/js/main.84ff6117.chunk.js"
+    "static/css/main.2044c6b4.chunk.css",
+    "static/js/main.854fab1f.chunk.js"
   ]
 }
