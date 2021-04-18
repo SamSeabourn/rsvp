@@ -20,7 +20,7 @@ export const LandscapeView = (): JSX.Element => {
               src={saveTheDate}
               alt="Caity and Sams wedding!"
             />
-            <h1>September 18 2021</h1>
+            <h1>September 18 2021 Sydney</h1>
             <div style={{ height: "20px" }} />
             <StyledInput type="text" placeholder="Full Name" formId="fullname" />
             <div style={{ height: "10px" }} />

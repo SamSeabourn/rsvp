@@ -19,8 +19,8 @@ export const PortraitView = () => {
             alt="Caity and Sams wedding!"
           />
           <div style={{ height: "10px" }} />
-          <h1 className={styles.date}>September 18 2021</h1>
-          <div style={{ height: "10px" }} />
+          <h1 className={styles.date}>September 18 2021 Sydney</h1>
+          <div style={{ height: "30px" }} />
           <StyledInput type="text" placeholder="Full Name" formId="fullname" />
           <div style={{ height: "10px" }} />
           <StyledInput type="email" placeholder="Your Email" formId="email" />

@@ -31,7 +31,7 @@ function App() {
   }
 
   const hasRSVPd = () => {
-    const hasRSVPd = (document.cookie.split('; ').find((c) => c.startsWith(cookieName))?.split('=')[1] == 'true')
+    const hasRSVPd = (document.cookie.split('; ').find((c) => c.startsWith(cookieName))?.split('=')[1] === 'true')
     return hasRSVPd
   }
 
