@@ -12,7 +12,7 @@ const ConfitmationPage = () => {
 
     return (
         <div className={ styles.titleContainer }>
-            <h2 className={ styles.title }  style={{ opacity: showMessage? "1" : "0" }}>We look forward to celebrating with you. We will send you and email with more details soon.</h2>
+            <h2 className={ styles.title }  style={{ opacity: showMessage? "1" : "0" }}>We look forward to celebrating with you. We will send you an email with more details soon.</h2>
         </div>
     )
 }

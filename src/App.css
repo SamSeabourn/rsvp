@@ -60,6 +60,7 @@ button {
   height: 2em;
   font-size: 1.5em;
   width: 92%;
+  padding: 0
 }
 
 button:hover {
@@ -106,7 +107,7 @@ button:hover {
   button {
     height: 25px;
     font-size: 15px;
-    width: 80%;
+    width: 82%;
   }
 
   button:hover {

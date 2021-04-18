@@ -22,7 +22,7 @@ export const LandscapeView = (): JSX.Element => {
             />
             <h1>September 18 2021</h1>
             <div style={{ height: "20px" }} />
-            <StyledInput type="text" placeholder="Fullname" formId="fullname" />
+            <StyledInput type="text" placeholder="Full Name" formId="fullname" />
             <div style={{ height: "10px" }} />
             <StyledInput type="email" placeholder="Your Email" formId="email" />
             <div style={{ height: "10px" }} />

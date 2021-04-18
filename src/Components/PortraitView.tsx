@@ -21,7 +21,7 @@ export const PortraitView = () => {
           <div style={{ height: "10px" }} />
           <h1 className={styles.date}>September 18 2021</h1>
           <div style={{ height: "10px" }} />
-          <StyledInput type="text" placeholder="Fullname" formId="fullname" />
+          <StyledInput type="text" placeholder="Full Name" formId="fullname" />
           <div style={{ height: "10px" }} />
           <StyledInput type="email" placeholder="Your Email" formId="email" />
           <div style={{ height: "10px" }} />
