@@ -28,7 +28,7 @@ export const LandscapeView = (): JSX.Element => {
             <div style={{ height: "10px" }} />
             <StyledInput
               type="text"
-              placeholder="Any dietary requrements?"
+              placeholder="Any dietary requirements?"
               formId="diet"
             />
             <div style={{ height: "20px" }} />
