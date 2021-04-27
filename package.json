@@ -1,7 +1,7 @@
 {
-  "name": "savethedate",
+  "name": "Save the date!",
   "version": "0.1.0",
-  "homepage": "https://caityandsam.com",
+  "homepage": "https://caityandsam.com/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
