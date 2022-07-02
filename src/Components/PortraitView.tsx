@@ -19,7 +19,7 @@ export const PortraitView = () => {
             alt="Caity and Sams wedding!"
           />
           <div style={{ height: "10px" }} />
-          <h1 className={styles.date}>September 18 2021 Sydney</h1>
+          <h1 className={styles.date}>September 17 2022 Lindfield Sydney</h1>
           <div style={{ height: "30px" }} />
           <StyledInput type="text" placeholder="Full Name" formId="fullname" />
           <div style={{ height: "10px" }} />
@@ -31,12 +31,7 @@ export const PortraitView = () => {
             formId="diet"
           />
           <div style={{ height: "10px" }} />
-          <button
-            className={styles.submit}
-          >
-            {" "}
-            RSVP{" "}
-          </button>
+          <button className={styles.submit}> RSVP </button>
         </div>
       </div>
     </div>
