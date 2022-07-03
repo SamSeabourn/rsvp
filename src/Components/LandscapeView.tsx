@@ -3,6 +3,13 @@ import styles from "../Styles/LandscapeView.module.css";
 import MainImage from "./MainImage";
 import StyledInput from "./StyledInput";
 import saveTheDate from "../Images/save_the_date.svg";
+import {
+  DIETARY_REQUIREMENTS,
+  EMAIL,
+  FULLNAME,
+  LOCATION,
+  RSVP,
+} from "../Constants";
 
 export const LandscapeView = (): JSX.Element => {
   return (
@@ -20,22 +27,19 @@ export const LandscapeView = (): JSX.Element => {
               src={saveTheDate}
               alt="Caity and Sams wedding!"
             />
-            <h1>September 18 2021 Sydney</h1>
+            <h1>{LOCATION}</h1>
             <div style={{ height: "20px" }} />
-            <StyledInput type="text" placeholder="Full Name" formId="fullname" />
+            <StyledInput type="text" placeholder={FULLNAME} formId="fullname" />
             <div style={{ height: "10px" }} />
-            <StyledInput type="email" placeholder="Your Email" formId="email" />
+            <StyledInput type="email" placeholder={EMAIL} formId="email" />
             <div style={{ height: "10px" }} />
             <StyledInput
               type="text"
-              placeholder="Any dietary requirements?"
+              placeholder={DIETARY_REQUIREMENTS}
               formId="diet"
             />
             <div style={{ height: "20px" }} />
-            <button>
-              {" "}
-              RSVP{" "}
-            </button>
+            <button>{RSVP}</button>
           </div>
         </div>
       </div>
